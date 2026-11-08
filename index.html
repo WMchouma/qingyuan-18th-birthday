@@ -1,64 +1,108 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-type="statement">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#110f2d">
-  <meta name="description" content="写给清源的生日祝福">
-  <title>清源，生日快乐！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#151515">
+  <meta name="page-type" content="statement">
+  <meta name="site-kind" content="personal birthday letter">
+  <meta name="description" content="写给清源的十八岁生日短笺">
+  <meta property="og:title" content="清源，十八岁生日快乐。">
+  <meta property="og:description" content="一封写给清源的生日祝福短笺。">
+  <title>清源，十八岁生日快乐。</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sky" aria-hidden="true">
-    <span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span>
-    <span class="star star-1">✦</span><span class="star star-2">✧</span><span class="star star-3">✦</span>
-    <span class="star star-4">·</span><span class="star star-5">✧</span><span class="star star-6">·</span>
-  </div>
+  <a class="skip-link" href="#letter">跳到生日祝福</a>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="glass-orbs" aria-hidden="true"><span class="glass-orb glass-orb-coral"></span><span class="glass-orb glass-orb-sage"></span><span class="glass-orb glass-orb-sky"></span></div>
 
-  <main class="page-shell">
+  <div class="page-shell">
     <header class="topbar">
-      <div class="brand"><span class="brand-dot"></span> A little birthday page</div>
-      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
-        <span class="music-icon">♫</span><span id="musicLabel">开启音乐</span>
+      <a class="wordmark" href="#top" aria-label="回到生日页面顶部">
+        <span class="wordmark-mark">18</span>
+        <span class="wordmark-text">A birthday note<br><i>for Qingyuan</i></span>
+      </a>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="开启背景音乐">
+        <span class="music-disc" aria-hidden="true"><span></span></span>
+        <span id="musicLabel">开启音乐</span>
       </button>
     </header>
 
-    <section class="hero" aria-labelledby="pageTitle">
-      <p class="eyebrow">TODAY IS YOUR DAY</p>
-      <h1 id="pageTitle">清源，<span>十八岁生日快乐！</span></h1>
-      <p class="hero-copy">愿十八岁的新篇章，快乐像星光一样闪耀，<br>想做的事都能慢慢实现。</p>
-      <div class="hero-actions">
-        <button class="primary-btn" id="wishButton" type="button">打开生日祝福 <span>↓</span></button>
-        <span class="tiny-note">戴上耳机，点击开启背景音乐</span>
-      </div>
-    </section>
+    <main id="top">
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-meta" data-enter>
+          <span>生日短笺 / 01</span>
+          <span>2026 · FOR QINGYUAN</span>
+        </div>
 
-    <section class="memory-card" id="wishCard" aria-label="生日祝福卡片">
-      <div class="image-wrap">
-        <div class="halo"></div>
-        <img src="qingyuan-avatar.jpg" alt="清源的头像">
-        <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✧</span>
-      </div>
-      <div class="wish-content">
-        <p class="card-kicker">FOR QINGYUAN</p>
-        <h2>把今天的快乐<br><em>存成一颗星星</em></h2>
-        <p class="wish-text">谢谢你一直以来的真诚和可爱。愿你在十八岁这一页，遇见很多温柔的人和闪闪发光的瞬间；累的时候有人陪，开心的时候有人分享，所有期待都能如期抵达。</p>
-        <div class="signature"><span></span> 你的朋友</div>
-      </div>
-    </section>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-enter>给清源的十八岁</p>
+            <h1 id="pageTitle" class="hero-title" aria-label="清源，十八岁生日快乐。">
+              <span class="split-line" data-split>清源，</span>
+              <span class="split-line hero-title-accent" data-split>十八岁生日快乐。</span>
+            </h1>
+            <p class="hero-lead" data-enter>愿你把新一岁的每一天，<br>都过成自己喜欢的样子。</p>
+            <div class="hero-actions" data-enter>
+              <button class="primary-button" id="wishButton" type="button">打开这封祝福 <span aria-hidden="true">↘</span></button>
+              <span class="action-note">建议打开声音<br>慢慢读完</span>
+            </div>
+          </div>
 
-    <section class="wishes" aria-label="生日关键词">
-      <div class="wish-pill"><strong>01</strong><span>平安顺遂</span></div>
-      <div class="wish-pill"><strong>02</strong><span>天天开心</span></div>
-      <div class="wish-pill"><strong>03</strong><span>闪闪发光</span></div>
-    </section>
+          <div class="hero-visual" data-enter>
+            <div class="portrait-frame" data-portrait-frame>
+              <div class="portrait-topline"><span>QY / 18</span><span>ONE OF ONE</span></div>
+              <img src="qingyuan-avatar.jpg" alt="清源的头像">
+              <div class="portrait-overlay" aria-hidden="true"></div>
+              <div class="portrait-stamp">new<br>chapter</div>
+              <div class="portrait-number" aria-hidden="true">18</div>
+              <span class="frame-dot frame-dot-a" aria-hidden="true"></span>
+              <span class="frame-dot frame-dot-b" aria-hidden="true"></span>
+            </div>
+            <span class="visual-note">今天，所有的光都为你留着。</span>
+          </div>
+        </div>
 
-    <footer>made with love for 清源 <span>♡</span></footer>
-  </main>
+        <a class="scroll-cue" href="#letter" data-enter><span>向下阅读</span><b aria-hidden="true">↓</b></a>
+      </section>
+
+      <section class="letter-section" id="letter" aria-labelledby="letterTitle">
+        <div class="section-label" data-enter><span>生日祝福 / 02</span><span>一封短笺</span></div>
+        <div class="letter-card" data-reveal data-pointer-card>
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="letter-index">18<br><span>years<br>young</span></div>
+          <div class="letter-copy">
+            <p class="eyebrow">Dear Qingyuan,</p>
+            <h2 id="letterTitle">把今天的快乐，<br><em>存成一颗星星。</em></h2>
+            <p>谢谢你一直以来的真诚和可爱。愿你在十八岁这一页，遇见很多温柔的人和闪闪发光的瞬间；累的时候有人陪，开心的时候有人分享，所有期待都能如期抵达。</p>
+            <div class="signature"><span></span>你的朋友</div>
+          </div>
+          <div class="letter-mark" aria-hidden="true">✦</div>
+        </div>
+      </section>
+
+      <section class="wishes-section" aria-labelledby="wishesTitle">
+        <div class="section-label" data-enter><span id="wishesTitle">愿望清单 / 03</span><span>留给新的一岁</span></div>
+        <div class="wishes-list">
+          <div class="wish-row" data-enter><strong>01</strong><span>平安顺遂</span><i>for every ordinary day</i></div>
+          <div class="wish-row" data-enter><strong>02</strong><span>天天开心</span><i>for every good surprise</i></div>
+          <div class="wish-row" data-enter><strong>03</strong><span>闪闪发光</span><i>for everything you become</i></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>made with love for 清源</span>
+      <span>十八岁，正好。</span>
+    </footer>
+  </div>
 
   <audio id="birthdayAudio" loop preload="metadata">
     <source src="copines.mp3" type="audio/mpeg">
   </audio>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
