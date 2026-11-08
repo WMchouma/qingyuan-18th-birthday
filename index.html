@@ -10,7 +10,7 @@
   <meta property="og:title" content="清源，十八岁生日快乐。">
   <meta property="og:description" content="今天，主角是你。">
   <title>清源，十八岁生日快乐。</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#wishes">跳到生日祝福</a>
@@ -44,7 +44,7 @@
 
         <div class="portrait-stage" data-enter>
           <div class="portrait-image-wrap">
-            <img class="portrait-image" src="qingyuan-avatar.jpg" alt="清源的头像">
+            <img class="portrait-image" src="qingyuan-avatar.jpg" alt="清源的头像" loading="eager" decoding="async" width="640" height="640">
             <div class="portrait-shine" aria-hidden="true"></div>
           </div>
           <div class="glass-chip age-chip"><span class="chip-overline">CHAPTER</span><strong>18</strong><span class="chip-caption">THE BEGINNING</span></div>
@@ -84,10 +84,10 @@
     </section>
   </main>
 
-  <audio id="birthdayAudio" loop preload="metadata">
+  <audio id="birthdayAudio" loop preload="none">
     <source src="copines.mp3" type="audio/mpeg">
   </audio>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

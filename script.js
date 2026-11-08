@@ -8,6 +8,12 @@ function setMusicState(isPlaying) {
   musicToggle.setAttribute("aria-pressed", String(isPlaying));
   musicToggle.setAttribute("aria-label", isPlaying ? "暂停生日背景音乐" : "播放生日背景音乐");
   musicLabel.textContent = isPlaying ? "正在播放" : "播放音乐";
+  
+  if (isPlaying && !reducedMotion) {
+    musicToggle.style.setProperty("--glow-opacity", "1");
+  } else {
+    musicToggle.style.setProperty("--glow-opacity", "0");
+  }
 }
 
 musicToggle.addEventListener("click", async () => {
@@ -27,6 +33,10 @@ musicToggle.addEventListener("click", async () => {
 
 audio.addEventListener("pause", () => setMusicState(false));
 audio.addEventListener("play", () => setMusicState(true));
+
+if ("loading" in HTMLImageElement.prototype) {
+  document.querySelectorAll("img[src]").forEach(img => img.loading = "lazy");
+}
 
 if (window.gsap) {
   const gsap = window.gsap;
